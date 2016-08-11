@@ -19,7 +19,7 @@ def p(n, p_sum):
     """
         
     # decimal class is needed for accurate decimal calculation
-    p_new = decimal.Decimal((366-n)/365.)
+    p_new = decimal.Decimal((366-n) / 365.)
     p_sum = decimal.Decimal(p_sum * p_new)
     p_same_birthday = decimal.Decimal(1 - p_sum)
 
